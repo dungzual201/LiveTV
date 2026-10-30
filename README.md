@@ -50,10 +50,18 @@ Yêu cầu:
 - Android SDK (compileSdk 37)
 - Gradle wrapper có sẵn trong repo
 
-Tạo `local.properties` trỏ tới Android SDK:
+Tạo `local.properties` trỏ tới Android SDK.
+
+Windows:
 
 ```properties
-sdk.dir=/duong/dan/den/Android/Sdk
+sdk.dir=C\:\\Users\\<ten-ban>\\AppData\\Local\\Android\\Sdk
+```
+
+macOS/Linux:
+
+```properties
+sdk.dir=/Users/<ten-ban>/Library/Android/sdk
 ```
 
 Build debug:
