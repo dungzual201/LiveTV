@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "playlists": [
+    {
+      "id": "iptv-org-vn",
+      "name": "iptv-org · Việt Nam",
+      "url": "https://iptv-org.github.io/iptv/countries/vn.m3u",
+      "fallbackUrls": ["https://raw.githubusercontent.com/iptv-org/iptv/master/streams/vn.m3u"],
+      "priority": 100,
+      "enabledByDefault": true,
+      "defaultCountry": "VN",
+      "homepage": "https://github.com/iptv-org/iptv"
+    },
+    {
+      "id": "iptv-org-vn-raw",
+      "name": "iptv-org · Việt Nam (bản raw)",
+      "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/vn.m3u",
+      "fallbackUrls": ["https://iptv-org.github.io/iptv/countries/vn.m3u"],
+      "priority": 95,
+      "enabledByDefault": true,
+      "defaultCountry": "VN",
+      "homepage": "https://github.com/iptv-org/iptv"
+    },
+    {
+      "id": "khanh71-vn",
+      "name": "All-In-One IPTV · Việt Nam",
+      "url": "https://raw.githubusercontent.com/khanh71/All-In-One-IPTV/main/http-iptv.m3u",
+      "fallbackUrls": [],
+      "priority": 90,
+      "enabledByDefault": true,
+      "defaultCountry": "VN",
+      "homepage": "https://github.com/khanh71/All-In-One-IPTV"
+    },
+    {
+      "id": "vtvgo-built-in",
+      "name": "VTV Go · chính thức (tích hợp)",
+      "url": "asset://curated_vn.m3u",
+      "fallbackUrls": [],
+      "priority": 85,
+      "enabledByDefault": true,
+      "defaultCountry": "VN",
+      "homepage": "https://vtvgo.vn"
+    },
+    {
+      "id": "iptv-org-asia",
+      "name": "iptv-org · Châu Á",
+      "url": "https://iptv-org.github.io/iptv/regions/asia.m3u",
+      "fallbackUrls": [],
+      "priority": 70,
+      "enabledByDefault": true,
+      "homepage": "https://github.com/iptv-org/iptv"
+    },
+    {
+      "id": "free-tv",
+      "name": "Free-TV · Quốc tế",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
+      "fallbackUrls": [],
+      "priority": 60,
+      "enabledByDefault": true,
+      "homepage": "https://github.com/Free-TV/IPTV"
+    },
+    {
+      "id": "iptv-org-all",
+      "name": "iptv-org · Toàn thế giới (nguồn lớn)",
+      "url": "https://iptv-org.github.io/iptv/index.m3u",
+      "fallbackUrls": [],
+      "priority": 20,
+      "enabledByDefault": false,
+      "homepage": "https://github.com/iptv-org/iptv"
+    }
+  ],
+  "epgs": [
+    {
+      "id": "vnepg",
+      "name": "VNEPG · Việt Nam (khoảng 4 ngày)",
+      "url": "https://epg.io.vn/epg.xml.gz",
+      "fallbackUrls": ["https://epg.io.vn/epg.xml"],
+      "priority": 100,
+      "enabledByDefault": true,
+      "defaultCountry": "VN",
+      "homepage": "https://epg.io.vn"
+    },
+    {
+      "id": "epgshare-vn",
+      "name": "EPGShare · Việt Nam (dự phòng)",
+      "url": "https://epgshare01.online/epgshare01/epg_ripper_VN1.xml.gz",
+      "fallbackUrls": [],
+      "priority": 70,
+      "enabledByDefault": true,
+      "defaultCountry": "VN",
+      "homepage": "https://epgshare01.online"
+    },
+    {
+      "id": "epgshare-uk",
+      "name": "EPGShare · Anh",
+      "url": "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz",
+      "fallbackUrls": [],
+      "priority": 40,
+      "enabledByDefault": true,
+      "defaultCountry": "GB",
+      "homepage": "https://epgshare01.online"
+    },
+    {
+      "id": "epgshare-us",
+      "name": "EPGShare · Hoa Kỳ",
+      "url": "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
+      "fallbackUrls": [],
+      "priority": 30,
+      "enabledByDefault": true,
+      "defaultCountry": "US",
+      "homepage": "https://epgshare01.online"
+    },
+    {
+      "id": "epgshare-au",
+      "name": "EPGShare · Úc",
+      "url": "https://epgshare01.online/epgshare01/epg_ripper_AU1.xml.gz",
+      "fallbackUrls": [],
+      "priority": 20,
+      "enabledByDefault": false,
+      "defaultCountry": "AU",
+      "homepage": "https://epgshare01.online"
+    },
+    {
+      "id": "epgshare-ca",
+      "name": "EPGShare · Canada",
+      "url": "https://epgshare01.online/epgshare01/epg_ripper_CA2.xml.gz",
+      "fallbackUrls": [],
+      "priority": 10,
+      "enabledByDefault": false,
+      "defaultCountry": "CA",
+      "homepage": "https://epgshare01.online"
+    }
+  ]
+}

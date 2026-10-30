@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LiveTV</string>
+    <string name="search_hint">Tìm kênh truyền hình</string>
+    <string name="search_settings_description">Tìm kênh LiveTV</string>
+    <string name="tif_input_label">LiveTV (IPTV)</string>
+    <string name="tif_setup_label">Thiết lập LiveTV</string>
+</resources>
