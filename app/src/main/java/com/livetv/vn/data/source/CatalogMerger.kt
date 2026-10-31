@@ -126,6 +126,7 @@ object CatalogMerger {
                         headers = entry.headers,
                         qualityScore = entry.qualityScore,
                         qualityLabel = entry.qualityLabel,
+                        fps = entry.fps,
                     )
                 }
             }

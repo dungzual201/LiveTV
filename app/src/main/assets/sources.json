@@ -5,7 +5,9 @@
       "id": "iptv-org-vn",
       "name": "iptv-org · Việt Nam",
       "url": "https://iptv-org.github.io/iptv/countries/vn.m3u",
-      "fallbackUrls": ["https://raw.githubusercontent.com/iptv-org/iptv/master/streams/vn.m3u"],
+      "fallbackUrls": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/vn.m3u"
+      ],
       "priority": 100,
       "enabledByDefault": true,
       "defaultCountry": "VN",
@@ -15,7 +17,9 @@
       "id": "iptv-org-vn-raw",
       "name": "iptv-org · Việt Nam (bản raw)",
       "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/vn.m3u",
-      "fallbackUrls": ["https://iptv-org.github.io/iptv/countries/vn.m3u"],
+      "fallbackUrls": [
+        "https://iptv-org.github.io/iptv/countries/vn.m3u"
+      ],
       "priority": 95,
       "enabledByDefault": true,
       "defaultCountry": "VN",
@@ -33,13 +37,23 @@
     },
     {
       "id": "vtvgo-built-in",
-      "name": "VTV Go · chính thức (tích hợp)",
+      "name": "VTV Go · 1080p chính thức (tích hợp)",
       "url": "asset://curated_vn.m3u",
       "fallbackUrls": [],
-      "priority": 85,
+      "priority": 98,
       "enabledByDefault": true,
       "defaultCountry": "VN",
       "homepage": "https://vtvgo.vn"
+    },
+    {
+      "id": "vtv-backup",
+      "name": "VTV · 1080p dự phòng (proxy)",
+      "url": "asset://curated_vtv_backup.m3u",
+      "fallbackUrls": [],
+      "priority": 86,
+      "enabledByDefault": true,
+      "defaultCountry": "VN",
+      "homepage": "https://github.com/iptv-org/iptv"
     },
     {
       "id": "iptv-org-asia",
@@ -67,6 +81,18 @@
       "priority": 20,
       "enabledByDefault": false,
       "homepage": "https://github.com/iptv-org/iptv"
+    },
+    {
+      "id": "hanoi-iptv",
+      "name": "HaNoi IPTV · Việt Nam (nguồn bổ sung)",
+      "url": "https://raw.githubusercontent.com/HaNoiIPTV/IPTV-1/master/IPTV.m3u",
+      "fallbackUrls": [
+        "https://raw.githubusercontent.com/HaNoiIPTV/IPTV-1/main/IPTV.m3u"
+      ],
+      "priority": 75,
+      "enabledByDefault": true,
+      "defaultCountry": "VN",
+      "homepage": "https://github.com/HaNoiIPTV/IPTV-1"
     }
   ],
   "epgs": [
@@ -74,7 +100,9 @@
       "id": "vnepg",
       "name": "VNEPG · Việt Nam (khoảng 4 ngày)",
       "url": "https://epg.io.vn/epg.xml.gz",
-      "fallbackUrls": ["https://epg.io.vn/epg.xml"],
+      "fallbackUrls": [
+        "https://epg.io.vn/epg.xml"
+      ],
       "priority": 100,
       "enabledByDefault": true,
       "defaultCountry": "VN",

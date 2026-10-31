@@ -60,6 +60,10 @@ class M3uParser(
                         displayName + " " + info.attrs["tvg-name"].orEmpty(),
                         resolved.first,
                     )
+                    val fps = ChannelText.fps(
+                        displayName + " " + info.attrs["tvg-name"].orEmpty(),
+                        resolved.first,
+                    )
                     entries += M3uEntry(
                         name = displayName,
                         url = resolved.first,
@@ -71,6 +75,7 @@ class M3uParser(
                         headers = info.headers + resolved.second,
                         qualityScore = quality.score,
                         qualityLabel = quality.label,
+                        fps = fps,
                     )
                 }
             }

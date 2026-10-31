@@ -77,6 +77,24 @@ object ChannelText {
         return if (fromName.score <= fromUrl.score) fromName else fromUrl
     }
 
+    private val fps50Pattern = Regex(
+        "(?:50\\s*(?:fps|hz)|[pi]50(?![0-9])|(?<![0-9])50p(?![0-9a-z]))",
+        RegexOption.IGNORE_CASE,
+    )
+    private val fps60Pattern = Regex(
+        "(?:60\\s*(?:fps|hz)|[pi]60(?![0-9])|(?<![0-9])60p(?![0-9a-z]))",
+        RegexOption.IGNORE_CASE,
+    )
+
+    fun fps(name: String, url: String? = null): Int? {
+        val text = "$name ${url.orEmpty()}"
+        return when {
+            fps60Pattern.containsMatchIn(text) -> 60
+            fps50Pattern.containsMatchIn(text) -> 50
+            else -> null
+        }
+    }
+
     private fun qualityFromText(text: String): Quality? {
         fun present(vararg values: String): Boolean =
             values.any { Regex("(?<![a-z0-9])${Regex.escape(it)}(?![a-z0-9])").containsMatchIn(text) }

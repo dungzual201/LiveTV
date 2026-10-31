@@ -11,6 +11,7 @@ data class StreamVariant(
     val headers: Map<String, String> = emptyMap(),
     val qualityScore: Int = 2,
     val qualityLabel: String? = null,
+    val fps: Int? = null,
 )
 
 @Serializable
@@ -27,8 +28,19 @@ data class Channel(
     val isVietnamese: Boolean
         get() = country.equals("VN", ignoreCase = true)
 
+    val isVtv: Boolean
+        get() {
+            val key = name.trim().lowercase()
+            if (key.startsWith("vtv") && key.getOrNull(3)?.isDigit() == true) return true
+            val id = tvgId?.trim()?.lowercase() ?: return false
+            return id.startsWith("vtv") && id.getOrNull(3)?.isDigit() == true
+        }
+
     val bestQualityLabel: String?
         get() = streams.maxByOrNull { it.qualityScore }?.qualityLabel
+
+    val bestFps: Int?
+        get() = streams.mapNotNull { it.fps }.maxOrNull()
 }
 
 @Serializable
@@ -118,6 +130,7 @@ data class M3uEntry(
     val headers: Map<String, String> = emptyMap(),
     val qualityScore: Int = 2,
     val qualityLabel: String? = null,
+    val fps: Int? = null,
 )
 
 enum class QualityMode {

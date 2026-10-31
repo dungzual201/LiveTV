@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.SystemClock
+import android.util.Log
 import androidx.annotation.OptIn
 import androidx.media3.common.AudioAttributes
 import androidx.media3.common.C
@@ -118,7 +119,12 @@ class LivePlayer(
         player.clearMediaItems()
         headerState.headers = emptyMap()
         this.channel = channel
-        orderedStreams = StreamSelector.order(channel.streams, health, qualityMode())
+        orderedStreams = StreamSelector.order(
+            streams = channel.streams,
+            health = health,
+            mode = qualityMode(),
+            isVtv = channel.isVtv,
+        )
         attemptLimit = minOf(orderedStreams.size, MAX_AUTO_ATTEMPTS)
         nextIndex = 0
         attemptReady = false
@@ -194,6 +200,10 @@ class LivePlayer(
         }
         cancelJobs()
         val variant = orderedStreams[nextIndex]
+        Log.i(
+            "LiveTvPlayback",
+            "channel=${activeChannel.name} source=${variant.sourceName} quality=${variant.qualityLabel} fps=${variant.fps} attempt=${nextIndex + 1}/$attemptLimit url=${variant.url}",
+        )
         currentVariant = variant
         attemptReady = false
         advancing = false

@@ -39,6 +39,20 @@ class M3uParserTest {
     }
 
     @Test
+    fun `parses frame rate hints from entry names`() {
+        val content = """
+            #EXTM3U
+            #EXTINF:-1 tvg-id="VTV1.vn@HD",VTV1 (1080p50)
+            https://example.com/vtv1-50.m3u8
+            #EXTINF:-1,VTV3 60fps
+            https://example.com/vtv3-60.m3u8
+        """.trimIndent()
+        val entries = parser.parse(content, "https://lists.example.com/list.m3u")
+        assertEquals(50, entries[0].fps)
+        assertEquals(60, entries[1].fps)
+    }
+
+    @Test
     fun `filters unsupported stream providers`() {
         val content = """
             #EXTM3U

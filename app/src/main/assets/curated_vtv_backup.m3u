@@ -1,0 +1,46 @@
+#EXTM3U
+# VTV 1080p backup endpoints (public proxies)
+#EXTINF:-1 tvg-id="vtv1hd" tvg-name="VTV1 (1080p dự phòng)" tvg-logo="https://i.imgur.com/vZYlGIW.png" group-title="VTV",VTV1
+https://dethich.pw/vtv1/index.m3u8
+#EXTINF:-1 tvg-id="vtv1hd" tvg-name="VTV1 (1080p dự phòng 2)" tvg-logo="https://i.imgur.com/vZYlGIW.png" group-title="VTV",VTV1
+https://vmttv.dpdns.org/tv360/?id=vtv1
+#EXTINF:-1 tvg-id="vtv2hd" tvg-name="VTV2 (1080p dự phòng)" tvg-logo="https://i.imgur.com/qWWpYRR.png" group-title="VTV",VTV2
+https://dethich.pw/vtv2/index.m3u8
+#EXTINF:-1 tvg-id="vtv2hd" tvg-name="VTV2 (1080p dự phòng 2)" tvg-logo="https://i.imgur.com/qWWpYRR.png" group-title="VTV",VTV2
+https://vmttv.dpdns.org/tv360/?id=vtv2
+#EXTINF:-1 tvg-id="vtv3hd" tvg-name="VTV3 (1080p dự phòng)" tvg-logo="https://i.imgur.com/4lJG1fu.png" group-title="VTV",VTV3
+https://dethich.pw/vtv3/index.m3u8
+#EXTINF:-1 tvg-id="vtv3hd" tvg-name="VTV3 (1080p dự phòng 2)" tvg-logo="https://i.imgur.com/4lJG1fu.png" group-title="VTV",VTV3
+https://vmttv.dpdns.org/tv360/?id=vtv3
+#EXTINF:-1 tvg-id="vtv4hd" tvg-name="VTV4 (1080p dự phòng)" tvg-logo="https://i.imgur.com/WsLLmR2.png" group-title="VTV",VTV4
+https://dethich.pw/vtv4/index.m3u8
+#EXTINF:-1 tvg-id="vtv4hd" tvg-name="VTV4 (1080p dự phòng 2)" tvg-logo="https://i.imgur.com/WsLLmR2.png" group-title="VTV",VTV4
+https://vmttv.dpdns.org/tv360/?id=vtv4
+#EXTINF:-1 tvg-id="vtv5hd" tvg-name="VTV5 (1080p dự phòng)" tvg-logo="https://i.imgur.com/Vnnna1C.png" group-title="VTV",VTV5
+https://dethich.pw/vtv5/index.m3u8
+#EXTINF:-1 tvg-id="vtv5hd" tvg-name="VTV5 (1080p dự phòng 2)" tvg-logo="https://i.imgur.com/Vnnna1C.png" group-title="VTV",VTV5
+https://vmttv.dpdns.org/tv360/?id=vtv5
+#EXTINF:-1 tvg-id="vtv5hdtnb" tvg-name="VTV5 Tây Nam Bộ (1080p dự phòng)" tvg-logo="https://i.imgur.com/xiuHjEQ.png" group-title="VTV",VTV5 Tây Nam Bộ
+https://dethich.pw/vtv5tnb/index.m3u8
+#EXTINF:-1 tvg-id="vtv5hdtn" tvg-name="VTV5 Tây Nguyên (1080p dự phòng)" tvg-logo="https://i.imgur.com/Hlcnqqt.png" group-title="VTV",VTV5 Tây Nguyên
+https://dethich.pw/vtv5tn/index.m3u8
+#EXTINF:-1 tvg-id="vtv6hd" tvg-name="VTV6 (1080p dự phòng)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/VTV6_logo_2026_final.svg/960px-VTV6_logo_2026_final.svg.png" group-title="VTV",VTV6
+https://dethich.pw/vtv6/index.m3u8
+#EXTINF:-1 tvg-id="vtv6hd" tvg-name="VTV6 (1080p dự phòng 2)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/VTV6_logo_2026_final.svg/960px-VTV6_logo_2026_final.svg.png" group-title="VTV",VTV6
+https://vmttv.dpdns.org/tv360/?id=vtv6
+#EXTINF:-1 tvg-id="vtv7hd" tvg-name="VTV7 (1080p dự phòng)" tvg-logo="https://i.imgur.com/ZwoP823.png" group-title="VTV",VTV7
+https://dethich.pw/vtv7/index.m3u8
+#EXTINF:-1 tvg-id="vtv7hd" tvg-name="VTV7 (1080p dự phòng 2)" tvg-logo="https://i.imgur.com/ZwoP823.png" group-title="VTV",VTV7
+https://vmttv.dpdns.org/tv360/?id=vtv7
+#EXTINF:-1 tvg-id="vtv8hd" tvg-name="VTV8 (1080p dự phòng)" tvg-logo="https://i.imgur.com/rf9adGJ.png" group-title="VTV",VTV8
+https://dethich.pw/vtv8/index.m3u8
+#EXTINF:-1 tvg-id="vtv8hd" tvg-name="VTV8 (1080p dự phòng 2)" tvg-logo="https://i.imgur.com/rf9adGJ.png" group-title="VTV",VTV8
+https://vmttv.dpdns.org/tv360/?id=vtv8
+#EXTINF:-1 tvg-id="vtv9hd" tvg-name="VTV9 (1080p dự phòng)" tvg-logo="https://i.imgur.com/QiY55sy.png" group-title="VTV",VTV9
+https://dethich.pw/vtv9/index.m3u8
+#EXTINF:-1 tvg-id="vtv9hd" tvg-name="VTV9 (1080p dự phòng 2)" tvg-logo="https://i.imgur.com/QiY55sy.png" group-title="VTV",VTV9
+https://vmttv.dpdns.org/tv360/?id=vtv9
+#EXTINF:-1 tvg-id="vtv10hd" tvg-name="VTV10 (1080p dự phòng)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/VTV10_logo_2026.png/960px-VTV10_logo_2026.png" group-title="VTV",VTV10
+https://dethich.pw/vtv10/index.m3u8
+#EXTINF:-1 tvg-id="vtv10hd" tvg-name="VTV10 (1080p dự phòng 2)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/VTV10_logo_2026.png/960px-VTV10_logo_2026.png" group-title="VTV",VTV10
+https://vmttv.dpdns.org/tv360/?id=vtv10

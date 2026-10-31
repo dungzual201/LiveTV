@@ -1,7 +1,10 @@
 package com.livetv.vn
 
+import com.livetv.vn.data.model.Channel
 import com.livetv.vn.data.util.ChannelText
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -59,5 +62,21 @@ class ChannelTextTest {
         val cleaned = ChannelText.cleanName("VTV1 HD (1080p) [Geo-blocked]")
         assertEquals("VTV1", cleaned)
         assertTrue(ChannelText.cleanName("VTV5 Tây Nam Bộ HD").contains("Tây Nam Bộ"))
+    }
+
+    @Test
+    fun `explicit frame rate is detected without matching channel numbers`() {
+        assertEquals(50, ChannelText.fps("VTV1 (1080p50)"))
+        assertEquals(50, ChannelText.fps("VTV3 50fps"))
+        assertEquals(60, ChannelText.fps("VTV1 60 fps"))
+        assertNull(ChannelText.fps("VTV1 (1080p)"))
+        assertNull(ChannelText.fps("VTV50"))
+    }
+
+    @Test
+    fun `vtv cluster is detected but vtv cab is not`() {
+        assertTrue(Channel(id = "vn.vtv1", name = "VTV1", tvgId = "VTV1.vn@HD").isVtv)
+        assertTrue(Channel(id = "vn.vtv5taynambo", name = "VTV5 Tây Nam Bộ", tvgId = "vtv5hdtnb").isVtv)
+        assertFalse(Channel(id = "vn.vtvcab1", name = "VTVcab 1", tvgId = "vtvcab1").isVtv)
     }
 }

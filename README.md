@@ -8,6 +8,7 @@
 - Gộp kênh trùng từ nhiều nguồn, ưu tiên nguồn ổn định và chất lượng cao.
 - Tự động failover sang nguồn khác khi stream lỗi, timeout hoặc bị chặn.
 - Hỗ trợ HLS/DASH, 4K/FHD, header HTTP riêng cho từng stream.
+- Nhóm VTV tự ưu tiên nguồn **1080p chính thức**, có nhiều bản dự phòng 1080p/720p/360p; tự ưu tiên 50fps nếu nguồn phát có hỗ trợ.
 - EPG XMLTV: chương trình hiện tại, chương trình tiếp theo và timeline 3 giờ.
 - Guide nhiều tab: Việt Nam, Quốc tế, Chất lượng cao, Yêu thích, Tất cả.
 - Điều hướng không cần nút Menu:
@@ -37,7 +38,7 @@
 Tải APK mới nhất tại [GitHub Releases](https://github.com/dungzual201/LiveTV/releases/latest), sau đó cài trực tiếp lên Android TV (cho phép cài ứng dụng ngoài Play Store) hoặc dùng ADB:
 
 ```bash
-adb install -r LiveTV-1.4.1-release.apk
+adb install -r LiveTV-1.5.0-release.apk
 ```
 
 APK release đã được ký để sideload, không dùng để phát hành trên Google Play.

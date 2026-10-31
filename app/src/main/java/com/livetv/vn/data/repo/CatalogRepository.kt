@@ -73,11 +73,27 @@ class CatalogRepository(
         true
     }
 
+    private fun catalogSignature(catalog: ChannelCatalog): Long {
+        var hash = 1125899906842597L
+        catalog.channels.forEach { channel ->
+            hash = hash * 31 + channel.id.hashCode()
+            hash = hash * 31 + channel.name.hashCode()
+            channel.streams.forEach { stream ->
+                hash = hash * 31 + stream.url.hashCode()
+                hash = hash * 31 + stream.sourceId.hashCode()
+                hash = hash * 31 + stream.headers.hashCode()
+                hash = hash * 31 + stream.qualityScore
+                hash = hash * 31 + (stream.fps ?: 0)
+            }
+        }
+        return hash
+    }
+
     private fun publishMerged(merged: ChannelCatalog) {
         val current = _catalog.value
         if (current.channels.isNotEmpty() &&
-            current.channels.size == merged.channels.size &&
-            current.updatedAt == merged.updatedAt
+            current.updatedAt == merged.updatedAt &&
+            catalogSignature(current) == catalogSignature(merged)
         ) {
             return
         }
